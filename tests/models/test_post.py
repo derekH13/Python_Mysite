@@ -1,5 +1,13 @@
-import pytest
 from blog.factories import PostFactory
+import os
+import django
+import pytest
+
+# Defina a variável de ambiente
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mysite.settings')
+django.setup()
+
+# Agora você pode importar PostFactory
 
 # cria uma row com title predefinido
 # passa para uma função que vai preencheer as informações necessarias
