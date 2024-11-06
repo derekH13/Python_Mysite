@@ -15,6 +15,8 @@ class PostAdmin(admin.ModelAdmin):
     # pre popula o slug baseado no title
     prepopulated_fields = {'slug': ('title', )}
 
+# dxdddd
+
 
 class PostEvercicio(admin.ModelAdmin):
     list_display = ('title', 'slug', 'status', 'created_on')
